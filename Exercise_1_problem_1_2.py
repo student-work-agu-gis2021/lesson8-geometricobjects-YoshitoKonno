@@ -115,12 +115,12 @@ except Exception as e:
 def get_centroid(geom):
   assert type(geom) in (Point,LineString,Polygon),"Input should be a Shapely geometry!"
   return geom.centroid
-poly1=create_poly_geom([(45.2,22.34),(100.22,-3.20),(70.0,10.20)])
+
 # Test and demonstrate the usage of the function. You can, for example, create shapely objects using the functions you created in problem 1 and print out information about their centroids:
 # 
 
 #  YOUR CODE HERE 7 to define some objects
-
+poly1=create_poly_geom([(10,10),(20,20),(20,30)])
 
 # CODE FOR TESTING YOUR SOLUTION
 centroid = get_centroid(poly1)
